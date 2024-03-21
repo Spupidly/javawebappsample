@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'devops-test-rg'
-      def webAppName = 'devops-test-lemonapp222'
+      def webAppName = 'devops-test-lemonapp'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
